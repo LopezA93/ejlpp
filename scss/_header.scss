@@ -1,0 +1,45 @@
+@import "variantes";
+/*Header*/
+.header {
+    background: $backblue;
+    border-radius: $boxborder;
+    .header__logo{
+        display: flex;
+        justify-content: center;
+
+    
+    }
+    .header__nav {
+        padding: .5em;
+        margin: 0 2em;
+        border-radius: $boxborder;
+        .header__nav__ul li {
+            a {
+                margin: auto 2em;
+                &:hover{
+                    transform: translateY(-5px) ;
+                    color:$backblue ;
+                    transition: all 0.5s; 
+                    
+                }
+               
+            }
+            ul {
+                text-align: start;
+                width: 150px;
+                left: 40px;
+                border: none;
+                
+                border-radius:0px;
+                     
+                    a{
+                        &:hover{
+                        background: none;
+                        }
+                }
+                
+            }
+            
+        }
+    }
+}

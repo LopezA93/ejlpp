@@ -1,0 +1,61 @@
+@mixin boxnov {
+    border-bottom: 1px solid lightblue;
+    
+    width: 400px;
+    height: 500px;
+    margin: 10px 15px;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+@mixin img{
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    
+}
+@mixin parrafo {
+    text-align: justify;
+    font-size: 1.5rem;
+    
+}
+/*Variables*/
+$mobile: 900px;
+
+
+.mainnov {
+    h2{
+        text-align: center;
+        margin: 15px;
+        
+    }
+
+    .mainnov__box {
+        display:grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto;
+        grid-gap: 4rem;
+        margin: 15px;
+        justify-content: center;
+        
+        .mainnov__box__nov{
+            @include boxnov();
+
+            img{
+                @include img;
+
+            }
+            p{
+                @include parrafo;
+            }
+
+            
+        }
+        @media (max-width: $mobile) {
+            grid-template-columns: auto;
+            
+        }
+        
+    }
+}

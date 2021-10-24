@@ -1,0 +1,146 @@
+@import "variantes";
+@mixin btnfooter {
+    background: gray;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    
+}
+@mixin btnhover ($color){
+    color:$color ;
+    transform: translateY(-10px);
+    transition: all 0.3s;
+}
+
+.footer {
+    background-color:$backblue;
+    margin-top: 1em;
+    border-radius:  $boxborder $boxborder 0 0 ;
+    
+    
+    .footer__logo{
+        text-align: center;
+        
+        .footer__logo__img {
+            img{
+                width: 300px;
+            }
+
+        } 
+        p{
+            color: lightgray;
+            font-size: 15px;
+            a{
+                text-decoration: none;
+                color: lightgray;
+                &:hover{
+                    color:darkcyan;
+                    border-bottom: $borderlinksfooter;
+
+                    transition: all 0.3s;
+                }
+            
+            }
+        }
+
+        
+        
+    }
+    .footer__redes {
+        text-align: center;
+        margin-top: 25px;
+        h6{
+            
+            color:white;
+            border-bottom: 1px solid rgb(138, 112, 27);
+            
+        }
+        ul{
+            padding: 0;
+            list-style-type: none;
+               
+            li{
+                text-align: center;
+                margin:10px;
+                display: inline-block;
+                
+                
+                i{
+                    @include btnfooter;
+                
+                    
+                }
+                
+                
+            }
+            .face i:hover{
+                @include btnhover(#3b5998 )
+                
+            }
+            .tw i:hover {
+                @include btnhover(lightskyblue);
+            }
+            .ws i:hover{
+                @include btnhover(#4FCE5D);;
+            }
+            .correo i:hover{
+                @include btnhover(black);;
+            }
+            
+            
+        }
+        .footer__redes__news {
+            p{
+                color: white;
+                
+            }
+            .formnews {
+                color:white;
+                
+            }
+            .footer__redes__news__form{
+                width: 50%;
+                left: 25%;
+            }
+
+        }
+    }
+    
+    .footer__nav {
+        margin-top: 25px;
+        text-align: center;
+        h6{
+            color:white;
+            border-bottom: 1px solid rgb(138, 112, 27);
+            display: block;
+            text-align: center;
+            
+        }
+        ul {
+            list-style-type: none;
+            margin: 10px 0;
+            text-align: center;
+            padding: 0;
+            li{
+                margin: .3em 0;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    
+                    &:hover {
+                        color:darkcyan;
+                        transition: all 0.3s;
+                    }
+                }
+
+            }
+        }
+    }
+    
+    
+}
