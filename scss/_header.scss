@@ -2,7 +2,8 @@
 /*Header*/
 .header {
     background: $backblue;
-    border-radius: $boxborder;
+    border-radius: 0 0 $boxborder $boxborder;
+    
     .header__logo{
         display: flex;
         justify-content: center;

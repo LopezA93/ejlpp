@@ -3,7 +3,7 @@
 /*Header*/
 .header {
   background: #242464;
-  border-radius: 0.5em;
+  border-radius: 0 0 0.5em 0.5em;
 }
 
 .header .header__logo {
@@ -192,7 +192,8 @@
 /*Variables*/
 .mainnov h2 {
   text-align: center;
-  margin: 15px;
+  margin: 25px;
+  font-size: 2rem;
 }
 
 .mainnov .mainnov__box {
@@ -231,7 +232,8 @@
 
 .mainnov .mainnov__box .mainnov__box__nov p {
   text-align: justify;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin: 1rem;
 }
 
 @media (max-width: 900px) {
@@ -281,6 +283,15 @@
   border-radius: 5px;
 }
 
+.mainintegrantes .mainintegrantes__socios img:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: -webkit-filter .5s;
+  transition: -webkit-filter .5s;
+  transition: filter .5s;
+  transition: filter .5s, -webkit-filter .5s;
+}
+
 .mainintegrantes .mainintegrantes__asociados {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
@@ -295,6 +306,44 @@
 
 .mainintegrantes .mainintegrantes__asociados ul li {
   padding: 0.5rem;
+}
+
+/*Variantes*/
+.mainservicios .mainservicios__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainservicios .mainservicios__cont h2 {
+  text-align: center;
+  margin: 25px;
+  font-size: 2rem;
+}
+
+.mainservicios .mainservicios__cont p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.mainservicios .mainservicios__cont ul {
+  list-style-type: none;
+  text-align: justify;
+  margin-left: 6rem;
+}
+
+/*Variantes*/
+.formcontacto h2 {
+  text-align: center;
+  margin: 25px;
+  font-size: 2rem;
 }
 
 * {

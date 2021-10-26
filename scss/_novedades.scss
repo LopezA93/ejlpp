@@ -17,7 +17,8 @@
 }
 @mixin parrafo {
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 1rem;
     
 }
 /*Variables*/
@@ -27,7 +28,8 @@ $mobile: 900px;
 .mainnov {
     h2{
         text-align: center;
-        margin: 15px;
+        margin: $titulo-margin;
+        font-size: $titulo-size;
         
     }
 
@@ -41,6 +43,7 @@ $mobile: 900px;
         
         .mainnov__box__nov{
             @include boxnov();
+            
 
             img{
                 @include img;
