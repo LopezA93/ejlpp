@@ -243,38 +243,37 @@
   }
 }
 
-.main__integrantes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+/*Variantes*/
+.mainintegrantes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.main__integrantes h2 {
-  margin: 25px;
-  font-size: 2rem;
-  color: black;
-}
-
-.main__integrantes .main__integrantes__socios {
+.mainintegrantes .mainintegrantes__socios {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
   text-align: center;
 }
 
-.main__integrantes .main__integrantes__socios p {
+.mainintegrantes .mainintegrantes__socios h2 {
+  margin: 25px;
+  font-size: 2rem;
+}
+
+.mainintegrantes .mainintegrantes__socios p {
   margin: 5px;
   font-size: 1rem;
 }
 
-.main__integrantes .main__integrantes__socios img {
+.mainintegrantes .mainintegrantes__socios img {
   margin: 10px;
   width: 300px;
   max-height: 300px;
@@ -285,13 +284,35 @@
   border-radius: 5px;
 }
 
-.main__integrantes .main__integrantes__socios img:hover {
+.mainintegrantes .mainintegrantes__socios img:hover {
   -webkit-filter: none;
           filter: none;
   -webkit-transition: -webkit-filter .5s;
   transition: -webkit-filter .5s;
   transition: filter .5s;
   transition: filter .5s, -webkit-filter .5s;
+}
+
+.mainintegrantes .mainintegrantes__asociados {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  text-align: justify;
+}
+
+.mainintegrantes .mainintegrantes__asociados h2 {
+  margin: 25px;
+  font-size: 2rem;
+}
+
+.mainintegrantes .mainintegrantes__asociados ul {
+  padding-left: 0;
+  list-style: none;
+  text-align: justify;
+}
+
+.mainintegrantes .mainintegrantes__asociados ul li {
+  padding: 1rem;
 }
 
 /*Variantes*/
