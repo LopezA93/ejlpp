@@ -28,7 +28,8 @@ $mobile: 900px;
 .mainnov {
     h2{
         text-align: center;
-        margin: 15px;
+        margin: $titulo-margin;
+        font-size: $titulo-size;
         
     }
 

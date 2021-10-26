@@ -11,20 +11,26 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin: 50px;
+    
     h2{
-        margin-bottom: 1rem;
-        font-size: 2rem;
+        margin: $titulo-margin;
+        font-size: $titulo-size;
         color:black; 
     }
     .main__integrantes__socios {
+        justify-content: start;
         text-align: center;
+        
         p{
             margin:5px;
             font-size: 1rem;
         }
         img{
             @include fotografia;
+            &:hover{
+                filter: none;
+                transition: filter .5s;
+            }
 
         }
     }

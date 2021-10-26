@@ -192,7 +192,8 @@
 /*Variables*/
 .mainnov h2 {
   text-align: center;
-  margin: 15px;
+  margin: 25px;
+  font-size: 2rem;
 }
 
 .mainnov .mainnov__box {
@@ -253,16 +254,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px;
 }
 
 .main__integrantes h2 {
-  margin-bottom: 1rem;
+  margin: 25px;
   font-size: 2rem;
   color: black;
 }
 
 .main__integrantes .main__integrantes__socios {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   text-align: center;
 }
 
@@ -280,6 +283,53 @@
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   border-radius: 5px;
+}
+
+.main__integrantes .main__integrantes__socios img:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: -webkit-filter .5s;
+  transition: -webkit-filter .5s;
+  transition: filter .5s;
+  transition: filter .5s, -webkit-filter .5s;
+}
+
+/*Variantes*/
+.mainservicios .mainservicios__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainservicios .mainservicios__cont h2 {
+  text-align: center;
+  margin: 25px;
+  font-size: 2rem;
+}
+
+.mainservicios .mainservicios__cont p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.mainservicios .mainservicios__cont ul {
+  list-style-type: none;
+  text-align: justify;
+  margin-left: 6rem;
+}
+
+/*Variantes*/
+.formcontacto h2 {
+  text-align: center;
+  margin: 25px;
+  font-size: 2rem;
 }
 
 * {
