@@ -64,3 +64,15 @@
         }
     }
 }
+@media (max-width:725px) {
+    .mainintegrantes {
+        grid-template-columns: auto;
+        .mainintegrantes__asociados {
+            text-align: center;
+            ul{
+                text-align: center;
+            }
+        }
+    }
+    
+}

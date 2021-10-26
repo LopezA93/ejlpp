@@ -322,6 +322,19 @@
   padding: 1rem;
 }
 
+@media (max-width: 725px) {
+  .mainintegrantes {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .mainintegrantes .mainintegrantes__asociados {
+    text-align: center;
+  }
+  .mainintegrantes .mainintegrantes__asociados ul {
+    text-align: center;
+  }
+}
+
 /*Variantes*/
 .mainservicios .mainservicios__cont {
   display: -webkit-box;
