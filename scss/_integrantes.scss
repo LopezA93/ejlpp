@@ -7,17 +7,22 @@
     border-radius: 5px;
     
 }
-.main__integrantes {
-    display: flex;
-    flex-flow: column wrap;
+@import "variantes";
+.mainintegrantes {
+    display: grid;
+    grid-template-columns: repeat(2, auto) ;
+    grid-template-rows: auto;
     align-items: center;
-    margin: 50px;
+    
+   
     h2{
         margin-bottom: 1rem;
         font-size: 2rem;
-        color:black; 
+        color:black;
+        margin: 2rem;
+        
     }
-    .main__integrantes__socios {
+    .mainintegrantes__socios {
         text-align: center;
         p{
             margin:5px;
@@ -26,6 +31,20 @@
         img{
             @include fotografia;
 
+        }
+    }
+    .mainintegrantes__asociados {
+        align-self: start;
+        ul{
+            list-style: none;
+            padding-left: 0;
+            text-align: justify;
+            li{
+                
+                padding: 0.5rem;
+                
+            }
+        
         }
     }
 }
