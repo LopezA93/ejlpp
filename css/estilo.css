@@ -280,6 +280,10 @@
   font-size: 1rem;
 }
 
+.mainintegrantes .mainintegrantes__socios p::first-line {
+  font-weight: bolder;
+}
+
 .mainintegrantes .mainintegrantes__socios img {
   margin: 10px;
   width: 300px;
@@ -314,7 +318,7 @@
 
 .mainintegrantes .mainintegrantes__asociados ul {
   padding-left: 0;
-  list-style: none;
+  list-style: disc;
   text-align: justify;
 }
 
