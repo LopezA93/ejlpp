@@ -189,6 +189,22 @@
   transition: all 0.3s;
 }
 
+.footer .footer__copyright {
+  margin-top: 2rem;
+  text-align: start;
+}
+
+.footer .footer__copyright p {
+  color: lightgray;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 991px) {
+  .footer .footer__copyright {
+    text-align: center;
+  }
+}
+
 /*Variables*/
 .mainnov h2 {
   text-align: center;
