@@ -44,9 +44,12 @@ $mobile: 900px;
         .mainnov__box__nov{
             @include boxnov();
             
+            
 
             img{
                 @include img;
+                
+                
 
             }
             p{

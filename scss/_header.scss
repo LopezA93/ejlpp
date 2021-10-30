@@ -14,32 +14,22 @@
         padding: .5em;
         margin: 0 2em;
         border-radius: $boxborder;
-        .header__nav__ul li {
-            a {
-                margin: auto 2em;
-                &:hover{
+        
+        .header__nav__ul {
+            li {
+                a {
+                    margin: auto 2em;
+                    &:hover{
                     transform: translateY(-5px) ;
                     color:$backblue ;
                     transition: all 0.5s; 
-                    
-                }
-               
-            }
-            ul {
-                text-align: start;
-                width: 150px;
-                left: 40px;
-                border: none;
-                
-                border-radius:0px;
-                     
-                    a{
-                        &:hover{
-                        background: none;
-                        }
-                }
+                    }
                 
             }
+        }
+        #resaltado{
+            border-bottom: $bordergray;
+        }
             
         }
     }

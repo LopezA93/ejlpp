@@ -33,16 +33,8 @@
   transition: all 0.5s;
 }
 
-.header .header__nav .header__nav__ul li ul {
-  text-align: start;
-  width: 150px;
-  left: 40px;
-  border: none;
-  border-radius: 0px;
-}
-
-.header .header__nav .header__nav__ul li ul a:hover {
-  background: none;
+.header .header__nav .header__nav__ul #resaltado {
+  border-bottom: 1px solid lightgray;
 }
 
 /*Variantes*/
@@ -340,6 +332,12 @@
 
 .mainintegrantes .mainintegrantes__asociados ul li {
   padding: 1rem;
+  list-style-type: none;
+}
+
+.mainintegrantes .mainintegrantes__asociados ul li .icono__integrante {
+  font-size: 15px;
+  padding: 1rem;
 }
 
 @media (max-width: 725px) {
@@ -451,8 +449,8 @@
 /*Links*/
 .index__links {
   padding: 2em;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#888));
-  background-image: linear-gradient(white, #888);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(lightgray));
+  background-image: linear-gradient(white, lightgray);
   height: 50%;
   border-radius: 0.5em;
 }
@@ -482,7 +480,7 @@
 /* Clientes*/
 .index__clientes {
   width: 100%;
-  background-color: #888;
+  background-color: lightgray;
   height: 5em;
   text-align: center;
   border-radius: 0.5em;
@@ -496,23 +494,36 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.index__clientes img:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
 }
 
 /* Ultimas nov*/
 .index__ultimasnov {
   text-align: center;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#999), to(#242464));
-  background-image: linear-gradient(#999, #242464);
   border-radius: 0.5em;
-  border: 1px solid gray;
 }
 
-.index__ultimasnov p {
-  font-size: 1.3em;
+.index__ultimasnov .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%21f01' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.index__ultimasnov .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%21f01' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.index__ultimasnov h4 {
   margin-top: 1em;
-  color: white;
+  border-bottom: 1px solid lightgray;
 }
 
 .index__ultimasnov img {
