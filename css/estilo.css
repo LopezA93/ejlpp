@@ -37,6 +37,12 @@
   border-bottom: 1px solid lightgray;
 }
 
+@media (max-width: 1199px) {
+  #resaltado {
+    border-bottom: none !important;
+  }
+}
+
 /*Variantes*/
 .footer {
   background-color: #242464;
@@ -191,9 +197,13 @@
   font-size: 0.7rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .footer .footer__copyright {
     text-align: center;
+  }
+  .footer .footer__redes {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -427,6 +437,10 @@
   font-size: 2rem;
 }
 
+.formcontacto .btn {
+  margin-top: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -484,6 +498,9 @@
   height: 5em;
   text-align: center;
   border-radius: 0.5em;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .index__clientes img {
@@ -536,26 +553,6 @@
 @media (max-width: 990px) {
   .index__links {
     text-align: center;
-  }
-}
-
-@media (max-width: 766px) {
-  .index__clientes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 10em;
-  }
-}
-
-@media (max-width: 420px) {
-  .index__clientes {
-    height: 14em;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

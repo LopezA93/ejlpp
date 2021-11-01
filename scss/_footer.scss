@@ -1,3 +1,5 @@
+
+
 @import "variantes";
 @mixin btnfooter {
     background: gray;
@@ -150,9 +152,12 @@
         }
         
     }
-    @media (max-width:991px) {
+    @media (max-width:1199px) {
         .footer__copyright {
             text-align: center;
+        }
+        .footer__redes {
+            transform: none;
         }
     }
     
