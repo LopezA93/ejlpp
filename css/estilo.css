@@ -201,7 +201,19 @@
   .footer .footer__copyright {
     text-align: center;
   }
-  .footer .footer__redes {
+  .footer .footer__redes ul .face i:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .footer .footer__redes ul .tw i:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .footer .footer__redes ul .ws i:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .footer .footer__redes ul .correo i:hover {
     -webkit-transform: none;
             transform: none;
   }

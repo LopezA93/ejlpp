@@ -157,7 +157,20 @@
             text-align: center;
         }
         .footer__redes {
-            transform: none;
+            ul {
+                .face i:hover {
+                    transform:none
+                }
+                .tw i:hover {
+                    transform:none
+                }
+                .ws i:hover {
+                    transform:none
+                }
+                .correo i:hover {
+                    transform:none
+                }
+            }
         }
     }
     
