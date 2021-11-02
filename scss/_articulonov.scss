@@ -1,0 +1,44 @@
+@import "variantes";
+.indexnovedades{
+    
+
+    .indexnovedades__titulo{
+        
+        h2 {
+        text-align: center;
+        margin: $titulo-margin;
+        font-size: $titulo-size;
+        }
+    
+    }
+    .indexnovedades__img {
+        margin: 1rem;
+
+        img{
+            width: 700px;
+            height: 400px;
+            float: left;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+
+    }
+    .indexnovedades__texto {
+        margin: 1rem;
+        p{
+            text-align: justify;
+            
+            padding: 2rem;
+        }
+    }
+}
+@media (max-width:1000px) {
+    .indexnovedades {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+    }
+
+}
