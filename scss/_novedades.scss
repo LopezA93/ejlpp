@@ -43,6 +43,10 @@ $mobile: 900px;
         
         .mainnov__box__nov{
             @include boxnov();
+            a{
+                text-decoration: none;
+                color: black;
+            }
             
             
 

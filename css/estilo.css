@@ -254,6 +254,11 @@
           align-items: center;
 }
 
+.mainnov .mainnov__box .mainnov__box__nov a {
+  text-decoration: none;
+  color: black;
+}
+
 .mainnov .mainnov__box .mainnov__box__nov img {
   width: 400px;
   height: 250px;
@@ -479,6 +484,10 @@
 .indexnovedades .indexnovedades__texto p {
   text-align: justify;
   padding: 2rem;
+}
+
+.indexnovedades .indexnovedades__texto p a {
+  color: black;
 }
 
 @media (max-width: 1000px) {
