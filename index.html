@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/estilo.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="splide-3.2.6/dist/css/splide.min.css">
 
 
 
@@ -71,7 +72,7 @@
     <div class="row gap-5">
       <!--Descripcion -->
       <section class="index__descripcion col-lg-8 col-sm-12 col-xs-12 ">
-        <h4 class="index__descripcion__titulo">Estudio Juridico Integral en Córdoba</h4>
+        <h4 class="index__descripcion__titulo">Estudio Jurídico Integral en Córdoba</h4>
         <p>Fundado en 1970 en Córdoba, República Argentina.
 
           Su misión es brindar asesoramiento legal, diseño, desarrollo y gestión de soluciones jurídicas integrales para
@@ -101,9 +102,9 @@
           <h4>Links de interés</h4>
           <ul class="index__links__ul">
             <li> <a href="https://abogado.org.ar/" target="_blank"> Colegio Abogados Córdoba</a></li>
-            <li><a href="https://www.justiciacordoba.gob.ar/" target="_blank"> Justicia Cordoba </a></li>
+            <li><a href="https://www.justiciacordoba.gob.ar/" target="_blank"> Justicia Córdoba </a></li>
             <li><a href="https://www.csjn.gov.ar" target="_blank"> Corte Suprema de la Nación</a></li>
-            <li><a href="http://www.mpfcordoba.gob.ar/" target="_blank">Ministerio Publico Fiscal Córdoba</a></li>
+            <li><a href="http://www.mpfcordoba.gob.ar/" target="_blank">Ministerio Público Fiscal Córdoba</a></li>
 
 
           </ul>
@@ -112,7 +113,7 @@
         </div>
       </section>
     </div>
-    <!--Clientes varios-->
+    <!--Clientes varios-
     <div class="index__clientes ">
       <div class=>
         <div id="carouselSlidesOnly" class="carousel slide " data-bs-ride="carousel">
@@ -137,11 +138,28 @@
       </div>
 
 
+    </div>-->
+    <div class="splide index__clientes">
+      <div class="splide__track">
+        <div class="splide__list">
+          <div class="splide__slide"><img src="img/Clientes/aguascba.png" alt="logoaguas"></div>
+          <div class="splide__slide"><img src="img/Clientes/bhipotecario.png" alt="logobcohipotecario"></div>
+          <div class="splide__slide"><img src="img/Clientes/ecogas.png" alt="logoecogas"></div>
+          <div class="splide__slide"> <img src="img/Clientes/epeclogo.png" alt="logoepec"></div>
+          <div class="splide__slide"> <img src="img/Clientes/logo coca1.png" alt="logococa"></div>
+          <div class="splide__slide"> <img src="img/Clientes/logotarjetanaranja.png" alt="logonaranja"></div>
+          <div class="splide__slide"> <img src="img/Clientes/motorola.png" alt="logomotorola"></div>
+          <div class="splide__slide"> <img src="img/Clientes/samsung.png" alt="logosamsung"></div>
+          <div class="splide__slide"> <img src="img/Clientes/quilmes.png" alt="logoquilmes"></div>
+          <div class="splide__slide"> <img src="img/Clientes/branca.png" alt="logobranca"></div>
+
+        </div>
+      </div>
     </div>
 
     <!-- Novedades jurisprudenciales -->
     <section class=" row index__ultimasnov mt-4 g-0">
-      <h4>Ultimas Novedades Juridicas</h4>
+      <h4>Ultimas Novedades Jurídicas</h4>
       <div class="index__ultimasnov__nov col-12  ">
         <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
           <div class="carousel-indicators ">
@@ -154,13 +172,16 @@
           </div>
           <div class="carousel-inner ">
             <div class="carousel-item active ">
-              <a href="Novedades/fallo-tramite-oral-adopcion.html"><img src="img/jurisprudencia1.jpg" class=" mx-auto img-fluid" alt="img1"></a>
+              <a href="Novedades/fallo-tramite-oral-adopcion.html"><img src="img/jurisprudencia1.jpg"
+                  class=" mx-auto img-fluid" alt="img1"></a>
             </div>
             <div class="carousel-item ">
-              <a href="Novedades/fallo-inconstitucionalidad-tope-extravio-valija.html"><img src="img/jurisprudencia2.jpg" class=" mx-auto img-fluid" alt="img2"></a>
+              <a href="Novedades/fallo-inconstitucionalidad-tope-extravio-valija.html"><img
+                  src="img/jurisprudencia2.jpg" class=" mx-auto img-fluid" alt="img2"></a>
             </div>
             <div class="carousel-item ">
-              <a href="Novedades/fallo-primero-apellido-materno.html"><img src="img/jurisprudencia3.jpg" class=" mx-auto img-fluid" alt="img3"></a>
+              <a href="Novedades/fallo-primero-apellido-materno.html"><img src="img/jurisprudencia3.jpg"
+                  class=" mx-auto img-fluid" alt="img3"></a>
             </div>
           </div>
           <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
@@ -188,19 +209,20 @@
           <img src="img/logofinal2.png" alt="logofooter" class="img-fluid">
         </div>
         <p><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/u5bdhuYCCfhgenRC7"
-            target="_blank">Ayacucho N° 72 - 7 ° Piso <br> Cordoba - Argentina</a> </p>
+            target="_blank">Ayacucho N° 72 - 7 ° Piso <br> Córdoba - Argentina</a> </p>
       </div>
       <div class="footer__redes col-lg-7 col-sm12">
         <h6>Canales de contacto</h6>
         <ul>
-          <li class="face"> <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="face"> <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </li>
           <li class="tw"> <a href="https://www.twitter.com" target="_blank"> <i class="fab fa-twitter"></i></a> </li>
           <li class="ws"> <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
           <li class="correo"> <a href="mailto:dr.lopezagustin1@gmail.com?Subject=Correo"><i
                 class="far fa-envelope"></i></a></li>
         </ul>
         <div class="footer__redes__news">
-          <p>Sucribite aqui!</p>
+          <p>Suscribite aquí!</p>
           <label for="formControlInput" class="form-label formnews">Ingrese su correo electronico</label>
           <div class="input-group footer__redes__news__form">
             <input type="email" class="form-control" placeholder="nombre@ejemplo.com" aria-label="email"
@@ -215,7 +237,7 @@
 
       </div>
       <div class="footer__nav col-lg-2 col-sm-12">
-        <h6>Navegacion</h6>
+        <h6>Navegación</h6>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="novedades.html">Novedades</a></li>
@@ -228,7 +250,7 @@
       </div>
     </div>
     <div class="row footer__copyright">
-      <p>Estudio Juridico Lopez-Perez Paredes, 2021 Copyright © Todos los Derechos Reservados ®.</p>
+      <p>Estudio Jurídico Lopez-Perez Paredes, 2021 Copyright © Todos los Derechos Reservados ®.</p>
 
     </div>
   </footer>
@@ -240,6 +262,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
     integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
     crossorigin="anonymous"></script>
+  <script src="splide-3.2.6/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 5,
+        perMove: 1,
+      });
+      splide.mount();
+    });
+  </script>
 </body>
 
 </html>

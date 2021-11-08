@@ -562,14 +562,21 @@
   height: 5em;
   text-align: center;
   border-radius: 0.5em;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
+}
+
+.index__clientes .splide__slide {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.index__clientes .splide__pagination li {
+  display: none;
 }
 
 .index__clientes img {
   width: 100px;
-  max-height: 60px;
+  height: auto;
   margin: 10px 15px;
   padding: 5px;
   -webkit-box-align: center;
@@ -577,6 +584,7 @@
           align-items: center;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  vertical-align: middle !important;
 }
 
 .index__clientes img:hover {

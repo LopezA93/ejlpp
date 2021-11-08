@@ -67,18 +67,28 @@
     height: 5em;
     text-align: center;  
     border-radius: $boxborder;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
+   
+    .splide__slide {
+        
+        align-self: center;
+
+    }
+    
+    .splide__pagination{
+        li{
+            display: none;
+        }
+    }
     
    
     img {
         width: 100px;
-        max-height: 60px;
+        height: auto;
         margin: 10px 15px;
         padding: 5px;
         align-items: center;
         filter: grayscale(100%);
+        vertical-align: middle !important;
         &:hover{
             filter: none;
             transition: filter 0.3s;
