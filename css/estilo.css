@@ -223,7 +223,7 @@
 .mainnov h2 {
   text-align: center;
   margin: 25px;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .mainnov .mainnov__box {
@@ -267,8 +267,9 @@
 
 .mainnov .mainnov__box .mainnov__box__nov p {
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 1rem;
+  color: #383842;
 }
 
 @media (max-width: 900px) {
@@ -293,7 +294,7 @@
 
 .mainintegrantes h2 {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: black;
   margin: 2rem;
 }
@@ -307,12 +308,13 @@
 
 .mainintegrantes .mainintegrantes__socios h2 {
   margin: 25px;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .mainintegrantes .mainintegrantes__socios p {
   margin: 5px;
   font-size: 1rem;
+  color: #383842;
 }
 
 .mainintegrantes .mainintegrantes__socios p::first-line {
@@ -348,7 +350,7 @@
 
 .mainintegrantes .mainintegrantes__asociados h2 {
   margin: 25px;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .mainintegrantes .mainintegrantes__asociados ul {
@@ -360,6 +362,7 @@
 .mainintegrantes .mainintegrantes__asociados ul li {
   padding: 1rem;
   list-style-type: none;
+  color: #383842;
 }
 
 .mainintegrantes .mainintegrantes__asociados ul li .icono__integrante {
@@ -413,10 +416,19 @@
   position: absolute;
   top: 40%;
   left: 30%;
+  font-size: 1.7rem;
+}
+
+.mainservicios__cont p {
+  color: #383842;
 }
 
 .mainservicios__cont ul {
   list-style: none;
+}
+
+.mainservicios__cont ul li {
+  color: #383842;
 }
 
 .mainservicios__aran {
@@ -432,15 +444,25 @@
   position: absolute;
   top: 40%;
   left: 30%;
+  font-size: 1.7rem;
 }
 
 .mainservicios__aran ul {
   list-style-type: none;
 }
 
+.mainservicios__aran ul li {
+  color: #383842;
+}
+
+.mainservicios__aran p {
+  color: #383842;
+}
+
 .mainservicios__aran p a {
   text-decoration: none;
-  color: black;
+  color: #383842;
+  font-style: italic;
 }
 
 .mainservicios__aran p a:hover {
@@ -451,7 +473,7 @@
 .formcontacto h2 {
   text-align: center;
   margin: 25px;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .formcontacto .btn {
@@ -462,7 +484,7 @@
 .indexnovedades .indexnovedades__titulo h2 {
   text-align: center;
   margin: 25px;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .indexnovedades .indexnovedades__img {
@@ -505,6 +527,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .indexnovedades__img img {
+    max-height: 350px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -522,6 +550,12 @@
 
 .index__descripcion h4 {
   border-bottom: 1px solid lightgray;
+  font-size: 1.7rem;
+}
+
+.index__descripcion p {
+  color: #383842;
+  font-size: 1.1rem;
 }
 
 /*Links*/
@@ -536,6 +570,7 @@
 .index__links h4 {
   border-bottom: 1px solid lightgray;
   margin-left: 1rem;
+  font-size: 1.7rem;
 }
 
 .index__links .index__links__ul {
@@ -548,11 +583,12 @@
 
 .index__links .index__links__ul li a {
   text-decoration: none;
-  color: #242464;
+  color: #383842;
+  font-size: 1.1rem;
 }
 
 .index__links .index__links__ul li a:hover {
-  color: lightslategray;
+  color: #242464;
 }
 
 /* Clientes*/
@@ -611,6 +647,7 @@
 }
 
 .index__ultimasnov h4 {
+  font-size: 1.7rem;
   margin-top: 1em;
   border-bottom: 1px solid lightgray;
 }
@@ -625,6 +662,12 @@
 @media (max-width: 990px) {
   .index__links {
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .index__clientes .splide__slide {
+    margin: 0 30px;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

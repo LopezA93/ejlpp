@@ -39,6 +39,7 @@
                 position:unset !important;
                 text-align: center;
                 
+                
             }
         }
     }
@@ -51,11 +52,19 @@
         @include cajatitulo;
         
         h2{
-            @include titulo; 
+            @include titulo;
+            font-size:$titulo-size; 
         }
+    }
+    
+    p{
+        color: $texto-color;
     }
     ul{
         list-style: none;
+        li{
+            color: $texto-color
+        }
     }
 }
 .mainservicios__aran {
@@ -65,15 +74,22 @@
         
         h2{
             @include titulo; 
+            font-size:$titulo-size;
         }
     }
     ul {
         list-style-type:none;
+        li{
+            color:$texto-color
+        }
     }
     p{
+        color: $texto-color;
         a{
             text-decoration:none;
-            color: black;
+            color: $texto-color;
+            font-style: italic;
+            
             &:hover{
                 text-decoration: underline;
 
