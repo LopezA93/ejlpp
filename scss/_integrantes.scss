@@ -76,7 +76,7 @@
         ul {
             padding-left: 0;
             list-style:disc;
-            text-align: center;
+            text-align: start;
             border-left: $bordergray;
             
             li{
@@ -99,7 +99,8 @@
         text-align: center;
         
         ul {
-            border-left:none !important
+            border-left:none !important;
+            text-align: center !important;
         }
     }
 

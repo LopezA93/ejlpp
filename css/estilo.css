@@ -360,7 +360,7 @@
 .mainintegrantes .mainintegrantes__asociados ul {
   padding-left: 0;
   list-style: disc;
-  text-align: center;
+  text-align: start;
   border-left: 1px solid lightgray;
 }
 
@@ -381,6 +381,7 @@
   }
   .mainintegrantes__asociados ul {
     border-left: none !important;
+    text-align: center !important;
   }
 }
 
