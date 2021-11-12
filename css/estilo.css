@@ -281,15 +281,16 @@
 
 /*Variantes*/
 .mainintegrantes {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mainintegrantes h2 {
@@ -297,12 +298,10 @@
   font-size: 1.7rem;
   color: black;
   margin: 2rem;
+  text-align: center;
 }
 
 .mainintegrantes .mainintegrantes__socios {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
   text-align: center;
 }
 
@@ -311,17 +310,29 @@
   font-size: 1.7rem;
 }
 
-.mainintegrantes .mainintegrantes__socios p {
-  margin: 5px;
-  font-size: 1rem;
-  color: #383842;
+.mainintegrantes .mainintegrantes__socios .mainintegrantes__integrantes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 1.7rem;
 }
 
-.mainintegrantes .mainintegrantes__socios p::first-line {
+.mainintegrantes .mainintegrantes__socios .mainintegrantes__integrantes p {
+  margin: 5px 15px;
+  font-size: 1rem;
+  color: #383842;
+  text-align: center;
+}
+
+.mainintegrantes .mainintegrantes__socios .mainintegrantes__integrantes p::first-line {
   font-weight: bolder;
 }
 
-.mainintegrantes .mainintegrantes__socios img {
+.mainintegrantes .mainintegrantes__socios .mainintegrantes__integrantes img {
   margin: 10px;
   width: 300px;
   max-height: 300px;
@@ -332,20 +343,13 @@
   border-radius: 5px;
 }
 
-.mainintegrantes .mainintegrantes__socios img:hover {
+.mainintegrantes .mainintegrantes__socios .mainintegrantes__integrantes img:hover {
   -webkit-filter: none;
           filter: none;
   -webkit-transition: -webkit-filter .5s;
   transition: -webkit-filter .5s;
   transition: filter .5s;
   transition: filter .5s, -webkit-filter .5s;
-}
-
-.mainintegrantes .mainintegrantes__asociados {
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  text-align: justify;
 }
 
 .mainintegrantes .mainintegrantes__asociados h2 {
@@ -356,11 +360,12 @@
 .mainintegrantes .mainintegrantes__asociados ul {
   padding-left: 0;
   list-style: disc;
-  text-align: justify;
+  text-align: center;
+  border-left: 1px solid lightgray;
 }
 
 .mainintegrantes .mainintegrantes__asociados ul li {
-  padding: 1rem;
+  padding: .5rem;
   list-style-type: none;
   color: #383842;
 }
@@ -370,16 +375,24 @@
   padding: 1rem;
 }
 
-@media (max-width: 725px) {
-  .mainintegrantes {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  .mainintegrantes .mainintegrantes__asociados {
+@media (max-width: 1312px) {
+  .mainintegrantes__asociados {
     text-align: center;
   }
-  .mainintegrantes .mainintegrantes__asociados ul {
-    text-align: center;
+  .mainintegrantes__asociados ul {
+    border-left: none !important;
+  }
+}
+
+@media (max-width: 1312px) and (max-width: 955px) {
+  .mainintegrantes__integrantes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainintegrantes__integrantes .integrante2 {
+    margin-top: 1rem;
+    border-bottom: 1px solid lightgray;
   }
 }
 
@@ -472,12 +485,18 @@
 /*Variantes*/
 .formcontacto h2 {
   text-align: center;
-  margin: 25px;
+  margin-top: 25px;
   font-size: 1.7rem;
 }
 
 .formcontacto .btn {
   margin-top: 1rem;
+}
+
+@media (max-width: 991px) {
+  .botones {
+    text-align: center;
+  }
 }
 
 /*Variantes*/
@@ -669,5 +688,23 @@
   .index__clientes .splide__slide {
     margin: 0 30px;
   }
+}
+
+/*------------404-----------------*/
+.error {
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.error h1 {
+  margin-bottom: 2rem;
+  color: darkblue;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.error h2 {
+  padding: 2rem;
 }
 /*# sourceMappingURL=estilo.css.map */

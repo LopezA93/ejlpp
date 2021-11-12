@@ -2,11 +2,16 @@
 .formcontacto {
     h2 {
         text-align: center;
-        margin: $titulo-margin;
+        margin-top: $titulo-margin;
         font-size: $titulo-size;
         
     }
     .btn {
         margin-top: 1rem;
+    }
+}
+@media (max-width:991px){
+    .botones {
+        text-align: center;
     }
 }
